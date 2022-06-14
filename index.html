@@ -4,14 +4,17 @@
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
   </head>
   <body>
-   
-     <py-script> 
-       
-       def hello(value):
-        print(f'hello {value}')
+    <b>
+      <p>
+        Today is <u><label id="today"></label></u>
+      </p>
+    </b>
+    <br />
 
-    hello('jaca')
-    
-     </py-script>
-    </body>
+    <py-script>
+      import datetime as dt 
+      
+      pyscript.write('today', dt.date.today().strftime('%A %B %d, %Y'))
+    </py-script>
+  </body>
 </html>
