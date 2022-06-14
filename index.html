@@ -2,19 +2,22 @@
   <head>
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+   
   </head>
   <body>
     <b>
       <p>
         Today is <u><label id="today"></label></u>
       </p>
+      <p id='jaca'></p>
     </b>
     <br />
 
     <py-script>
       import datetime as dt 
-      
+
       pyscript.write('today', dt.date.today().strftime('%A %B %d, %Y'))
+      pyscript.write('jaca', 'jaca mole e pedra agulha')
     </py-script>
   </body>
 </html>
